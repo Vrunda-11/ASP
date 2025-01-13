@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Task3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #4E4E4E;
+            font-size:14px;
+            color:white;
+            font-family:Segoe UI Historic;
+        }
+        .auto-style2 {
+            width: 26px;
+            height: 18px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+     <table class="auto-style1" border="1">
+        <tr>
+            <td class="auto-style">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<img align="center" src="image/logo.png" class="auto-style2" />&nbsp; <b>Progress</b>&#39;Telerik&#39;</td>
+            <td class="auto-style">PRODUCTS</td>
+            <td class="auto-style">ENTERPRISE</td>
+            <td class="auto-style">FREE TRIALS</td>
+            <td class="auto-style">PRICING</td>
+            <td class="auto-style">SUPPORT &amp; LEARNING</td>
+            <td class="auto-style">ABOUT US</td>
+            <td class="auto-style">
+                <asp:Image ID="Image1" runat="server" Height="22px" ImageUrl="~/image/search.png" Width="30px" />
+            </td>
+            <td class="auto-style">YOUR ACCOUNT</td>
+            <td class="auto-style">TELERIK PLATFORM</td>
+        </tr>
+    </table>
+    </form>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+       </asp:ContentPlaceHolder>
+       
+</body>
+</html>

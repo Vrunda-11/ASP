@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_2_login_master.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" >
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.625rem;
+  height:32rem;
+}
+        h2 {
+            color:white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h4{
+            color:#3e7376;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server" Style="background-image: linear-gradient(to right,#146990,#169069); height: 931px;">
+    <div>
+        <div class="box">
+            <center><h2>Sign in</h2>
+                <h4>Sign in with your username and password</h4> </center>
+                <p>
+                    <asp:Label ID="Label1" runat="server" Text="Your username :" Font-Bold="True" Font-Size="17pt" ForeColor="White"></asp:Label>
+            </p>
+            <p>
+                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" Width="98%" Height="35px"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label2" runat="server" Text="Your password :" Font-Bold="True" Font-Size="17pt" ForeColor="White"></asp:Label>
+            </p>
+            <p>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="98%" Height="35px"></asp:TextBox>
+            </p>
+            <p>
+                <asp:CheckBox ID="CheckBox1" runat="server" Text="Remember Me" Font-Size="14pt" ForeColor="White" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="14pt" ForeColor="#00A8F9">Forgot Password?</asp:HyperLink>
+            </p>
+            <p>
+                <asp:Button ID="Button1" runat="server" Text="Login" Width="98%" Height="45px" Font-Bold="True" Font-Size="15pt" BackColor="Black" ForeColor="White" OnClick="Button1_Click"/>
+            </p>
+            <center><p>
+                <asp:Label ID="Label3" runat="server" Text="Not a  member?" ForeColor="White"></asp:Label>
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="13pt" ForeColor="#00A8F9">Register here!</asp:HyperLink>
+            </p>
+                <p>
+                    <asp:Label ID="Label4" runat="server" Font-Size="Large" ForeColor="White"></asp:Label>
+            </p></center>
+           
+
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
